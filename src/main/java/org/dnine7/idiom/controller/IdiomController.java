@@ -29,18 +29,18 @@ public class IdiomController {
     public Result<List<Idiom>> list(@RequestBody(required = false) Idiom idiom) {
         QueryWrapper<Idiom> qw = new QueryWrapper<Idiom>();
         if (idiom != null) {
-            if (StringUtils.hasText(idiom.getName())) qw.like("name",idiom.getName());
-            if (idiom.getTypeId() != null && idiom.getTypeId() != 0) qw.eq("type_id",idiom.getTypeId());
-            if (idiom.getGroupId() != null && idiom.getGroupId() != 0) qw.eq("group_id",idiom.getGroupId());
+            if (StringUtils.hasText(idiom.getName())) qw.like("name", idiom.getName());
+            if (idiom.getTypeId() != null && idiom.getTypeId() != 0) qw.eq("type_id", idiom.getTypeId());
+            if (idiom.getGroupId() != null && idiom.getGroupId() != 0) qw.eq("group_id", idiom.getGroupId());
         }
         List<Idiom> list = idiomService.list(qw);
         Map<Long, String> typeMap = typeService.getTypeMap();
         Map<Long, String> groupMap = groupService.getGroupMap();
-        list.forEach( i -> {
-            if (i.getTypeId() != 0) {
+        list.forEach(i -> {
+            if (i.getTypeId() != null && i.getTypeId() != 0 && typeMap.containsKey(i.getTypeId())) {
                 i.setType(typeMap.get(i.getTypeId()));
             }
-            if (i.getGroupId() != 0) {
+            if (i.getGroupId() != null && i.getGroupId() != 0 && typeMap.containsKey(i.getGroupId())) {
                 i.setGroup(groupMap.get(i.getGroupId()));
             }
         });

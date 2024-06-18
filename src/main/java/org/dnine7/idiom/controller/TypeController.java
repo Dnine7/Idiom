@@ -19,8 +19,9 @@ public class TypeController {
 
 
     @RequestMapping("/list")
-    public Result<List<Type>> list(@RequestBody Type type) {
-        return Result.ok(typeService.list());
+    public Result<List<Type>> list() {
+        List<Type> list = typeService.list();
+        return Result.ok(list);
     }
 
     @RequestMapping("/getTypeName")

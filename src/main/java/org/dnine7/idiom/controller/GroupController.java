@@ -19,7 +19,7 @@ public class GroupController {
 
 
     @RequestMapping("/list")
-    public Result<List<Group>> list(@RequestBody Group group) {
+    public Result<List<Group>> list() {
         return Result.ok(groupService.list());
     }
 
