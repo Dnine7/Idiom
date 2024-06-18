@@ -2,6 +2,7 @@ package org.dnine7.idiom.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import jakarta.annotation.Resource;
+import org.dnine7.idiom.common.Result;
 import org.dnine7.idiom.dao.Idiom;
 import org.dnine7.idiom.service.IIdiomService;
 import org.springframework.util.StringUtils;
@@ -18,28 +19,82 @@ public class IdiomController {
 
 
     @RequestMapping("/list")
-    public List<Idiom> list(@RequestBody Idiom idiom) {
+    public Result<List<Idiom>> list(@RequestBody Idiom idiom) {
         QueryWrapper<Idiom> qw = new QueryWrapper<Idiom>();
         if (StringUtils.hasText(idiom.getName())) qw.like("name",idiom.getName());
         if (idiom.getTypeId() != null && idiom.getTypeId() != 0) qw.eq("type_id",idiom.getTypeId());
         if (idiom.getGroupId() != null && idiom.getGroupId() != 0) qw.eq("group_id",idiom.getGroupId());
         List<Idiom> list = idiomService.list(qw);
-        return list;
+        return Result.ok(list);
+    }
+
+    @RequestMapping("/bindType")
+    public Result<String> bindType(@RequestParam long idiomId, @RequestParam long typeId) {
+        try {
+            Idiom idiom = idiomService.getById(idiomId);
+            if (idiom == null) {
+                return Result.error("未找到对应的成语记录");
+            }
+            idiom.setTypeId(typeId);
+            boolean updateResult = idiomService.updateById(idiom);
+            if (!updateResult) {
+                return Result.error("分类失败，请稍后重试");
+            }
+            return Result.ok("分类成功！");
+        } catch (Exception e) {
+            // 记录异常日志
+            return Result.error("分类失败：" + e.getMessage());
+        }
+    }
+
+    @RequestMapping("/bindGroup")
+    public Result<String> bindGroup(@RequestParam long idiomId, @RequestParam long groupId) {
+        try {
+            Idiom idiom = idiomService.getById(idiomId);
+            if (idiom == null) {
+                return Result.error("未找到对应的成语记录");
+            }
+            idiom.setGroupId(groupId);
+            boolean updateResult = idiomService.updateById(idiom);
+            if (!updateResult) {
+                return Result.error("编组失败，请稍后重试");
+            }
+            return Result.ok("编组成功！");
+        } catch (Exception e) {
+            // 记录异常日志
+            return Result.error("编组失败：" + e.getMessage());
+        }
     }
 
     @PostMapping("/add")
-    public void save(@RequestBody Idiom idiom) {
+    public Result<String> save(@RequestBody Idiom idiom) {
+        if (!StringUtils.hasText(idiom.getName())) {
+            return Result.error("成语名称不能为空");
+        }
+        if (!StringUtils.hasText(idiom.getMean())) {
+            return Result.error("成语释义不能为空");
+        }
         idiomService.save(idiom);
+
+        return Result.ok("添加成功！");
     }
 
     @PutMapping("/update")
-    public void update(@RequestBody Idiom idiom) {
-        idiomService.updateById(idiom);
+    public Result<String> update(@RequestBody Idiom idiom) {
+        boolean b = idiomService.updateById(idiom);
+        if (!b) {
+            return Result.error("更新失败，请稍后重试");
+        }
+        return Result.ok("更新成功！");
     }
 
     @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable Long id) {
-        idiomService.removeById(id);
+    public Result<String> delete(@PathVariable Long id) {
+        boolean b = idiomService.removeById(id);
+        if (!b) {
+            return Result.error("删除失败，请稍后重试");
+        }
+        return Result.ok("删除成功！");
     }
 
 
