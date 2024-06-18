@@ -1,0 +1,12 @@
+2024-06-18 10:39:58.787 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==>  Preparing: SELECT id,name,mean,type_id,group_id FROM Idiom WHERE (type_id = ?)
+2024-06-18 10:39:58.811 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==> Parameters: 1(Long)
+2024-06-18 10:39:58.860 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - <==      Total: 1
+2024-06-18 10:40:18.065 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==>  Preparing: SELECT id,name,mean,type_id,group_id FROM Idiom WHERE (type_id = ?)
+2024-06-18 10:40:18.084 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==> Parameters: 1(Long)
+2024-06-18 10:40:18.129 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - <==      Total: 1
+2024-06-18 10:40:59.815 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==>  Preparing: SELECT id,name,mean,type_id,group_id FROM Idiom WHERE (name LIKE ?)
+2024-06-18 10:40:59.833 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==> Parameters: %%1%%(String)
+2024-06-18 10:40:59.872 [http-nio-779-exec-1] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - <==      Total: 1
+2024-06-18 10:41:17.657 [http-nio-779-exec-2] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==>  Preparing: SELECT id,name,mean,type_id,group_id FROM Idiom WHERE (name LIKE ?)
+2024-06-18 10:41:17.675 [http-nio-779-exec-2] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - ==> Parameters: %1%(String)
+2024-06-18 10:41:17.716 [http-nio-779-exec-2] DEBUG org.dnine7.idiom.mapper.IdiomMapper.selectList - <==      Total: 1

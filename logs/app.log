@@ -1,0 +1,78 @@
+2024-06-18 10:18:26.834 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 23756 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:18:26.835 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:18:27.241 [main] DEBUG c.b.m.a.MybatisPlusAutoConfiguration - Searching for mappers annotated with @Mapper
+2024-06-18 10:18:27.242 [main] DEBUG c.b.m.a.MybatisPlusAutoConfiguration - Using auto-configuration base package 'org.dnine7.idiom'
+2024-06-18 10:18:27.316 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\Dnine7\Idiom\target\classes\org\dnine7\idiom\mapper\IdiomMapper.class]
+2024-06-18 10:18:27.318 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'idiomMapper' and 'org.dnine7.idiom.mapper.IdiomMapper' mapperInterface
+2024-06-18 10:18:27.578 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:18:27.586 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:18:27.587 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:18:27.588 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:18:27.624 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:18:27.624 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 758 ms
+2024-06-18 10:18:27.759 [main] DEBUG c.b.m.e.s.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2024-06-18 10:18:27.843 [main] DEBUG c.b.m.core.toolkit.Sequence - Get /192.168.10.101 network interface 
+2024-06-18 10:18:27.851 [main] DEBUG c.b.m.core.toolkit.Sequence - Get network interface info: name:eth8 (Realtek PCIe GbE Family Controller)
+2024-06-18 10:18:27.856 [main] DEBUG c.b.m.core.toolkit.Sequence - Initialization Sequence datacenterId:14 workerId:20
+2024-06-18 10:18:28.145 [main] DEBUG c.b.m.a.MybatisPlusAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2024-06-18 10:18:28.207 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:18:28.221 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:18:28.230 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.824 seconds (process running for 2.346)
+2024-06-18 10:18:37.046 [http-nio-779-exec-3] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:18:37.047 [http-nio-779-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:18:37.048 [http-nio-779-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-18 10:18:37.127 [http-nio-779-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-06-18 10:18:37.130 [http-nio-779-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40258c35] was not registered for synchronization because synchronization is not active
+2024-06-18 10:18:37.183 [http-nio-779-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:18:37.495 [http-nio-779-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e7ca440
+2024-06-18 10:18:37.496 [http-nio-779-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:18:37.500 [http-nio-779-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@141731845 wrapping com.mysql.cj.jdbc.ConnectionImpl@3e7ca440] will not be managed by Spring
+2024-06-18 10:18:37.543 [http-nio-779-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40258c35]
+2024-06-18 10:18:55.945 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:18:55.950 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:23:14.129 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.dnine7.idiom.IdiomApplication.main(IdiomApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@43b4fe19 - Failed to create converter for [%clr] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:282)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:260)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:193)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted

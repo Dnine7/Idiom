@@ -1,0 +1,142 @@
+2024-06-18 10:26:24.903 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 24160 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:26:24.905 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:26:25.632 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:26:25.640 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:26:25.641 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:26:25.641 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:26:25.684 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:26:25.684 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 747 ms
+2024-06-18 10:26:26.250 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:26:26.264 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:26:26.271 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.813 seconds (process running for 2.419)
+2024-06-18 10:28:44.018 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 21996 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:28:44.021 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:28:44.757 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:28:44.765 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:28:44.767 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:28:44.767 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:28:44.812 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:28:44.812 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 760 ms
+2024-06-18 10:28:45.372 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:28:45.385 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:28:45.393 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.796 seconds (process running for 2.302)
+2024-06-18 10:28:50.092 [http-nio-779-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:28:50.092 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:28:50.093 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-18 10:28:50.230 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:28:50.596 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@269e77ba
+2024-06-18 10:28:50.599 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:31:16.474 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:31:16.480 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:31:18.467 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 8024 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:31:18.468 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:31:19.193 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:31:19.201 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:31:19.202 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:31:19.203 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:31:19.237 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:31:19.238 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 738 ms
+2024-06-18 10:31:19.799 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:31:19.812 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:31:19.819 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.813 seconds (process running for 2.443)
+2024-06-18 10:31:25.766 [http-nio-779-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:31:25.767 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:31:25.767 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-18 10:31:25.895 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:31:26.234 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eacb94d
+2024-06-18 10:31:26.235 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:38:38.856 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:38:38.869 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:38:40.708 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 8968 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:38:40.709 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:38:41.436 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:38:41.444 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:38:41.445 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:38:41.446 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:38:41.482 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:38:41.483 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 744 ms
+2024-06-18 10:38:42.053 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:38:42.066 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:38:42.074 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.818 seconds (process running for 2.315)
+2024-06-18 10:38:44.969 [http-nio-779-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:38:44.969 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:38:44.970 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-18 10:38:45.120 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:38:45.468 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dded0e8
+2024-06-18 10:38:45.470 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:39:52.063 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:39:52.069 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:39:53.929 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 20908 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:39:53.931 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:39:54.858 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:39:54.866 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:39:54.867 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:39:54.867 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:39:54.906 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:39:54.906 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 934 ms
+2024-06-18 10:39:55.538 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:39:55.554 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:39:55.562 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 2.094 seconds (process running for 2.621)
+2024-06-18 10:39:58.232 [http-nio-779-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:39:58.232 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:39:58.233 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-18 10:39:58.394 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:39:58.763 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ac88ad4
+2024-06-18 10:39:58.765 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:40:11.787 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:40:11.793 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:40:13.915 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 3616 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:40:13.917 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:40:14.690 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:40:14.699 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:40:14.700 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:40:14.700 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:40:14.736 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:40:14.736 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 781 ms
+2024-06-18 10:40:15.387 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:40:15.428 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:40:15.440 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 2.026 seconds (process running for 2.625)
+2024-06-18 10:40:17.521 [http-nio-779-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:40:17.521 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:40:17.522 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-18 10:40:17.676 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:40:18.057 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ea785a1
+2024-06-18 10:40:18.058 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:40:51.348 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:40:51.355 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:40:54.330 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 18692 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:40:54.331 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:40:55.112 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:40:55.119 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:40:55.120 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:40:55.121 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:40:55.157 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:40:55.157 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 793 ms
+2024-06-18 10:40:55.743 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:40:55.756 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:40:55.763 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.89 seconds (process running for 2.387)
+2024-06-18 10:40:59.333 [http-nio-779-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:40:59.334 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:40:59.334 [http-nio-779-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-18 10:40:59.479 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:40:59.806 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e86ec0a
+2024-06-18 10:40:59.808 [http-nio-779-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-18 10:41:11.675 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-18 10:41:11.682 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-18 10:41:14.453 [main] INFO  org.dnine7.idiom.IdiomApplication - Starting IdiomApplication using Java 18 with PID 14192 (F:\Dnine7\Idiom\target\classes started by admin in F:\Dnine7\Idiom)
+2024-06-18 10:41:14.455 [main] INFO  org.dnine7.idiom.IdiomApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-18 10:41:15.275 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 779 (http)
+2024-06-18 10:41:15.285 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-779"]
+2024-06-18 10:41:15.286 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-18 10:41:15.286 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-18 10:41:15.323 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2024-06-18 10:41:15.323 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 838 ms
+2024-06-18 10:41:15.921 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-779"]
+2024-06-18 10:41:15.936 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 779 (http) with context path '/api'
+2024-06-18 10:41:15.943 [main] INFO  org.dnine7.idiom.IdiomApplication - Started IdiomApplication in 1.937 seconds (process running for 2.446)
+2024-06-18 10:41:17.153 [http-nio-779-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-18 10:41:17.154 [http-nio-779-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-18 10:41:17.154 [http-nio-779-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-18 10:41:17.314 [http-nio-779-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-18 10:41:17.649 [http-nio-779-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a2c2278
+2024-06-18 10:41:17.651 [http-nio-779-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
