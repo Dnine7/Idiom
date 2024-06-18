@@ -1,0 +1,24 @@
+server:
+  port: 779
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: Idiom
+  datasource:
+    url: jdbc:mysql://bj-cdb-quqpaeoc.sql.tencentcdb.com:20224/Idiom?useSSL=false&serverTimezone=UTC
+    username: root
+    password: xzq521xzq
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mybatis-plus:
+    mapper-locations: classpath*:mapper/*.xml
+    type-aliases-package: com.example.entity
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  hikari:
+    pool-name: HikariPool-1
+    minimum-idle: 5
+    maximum-pool-size: 20
+    idle-timeout: 30000
+    connection-timeout: 20000
+    max-lifetime: 1800000
