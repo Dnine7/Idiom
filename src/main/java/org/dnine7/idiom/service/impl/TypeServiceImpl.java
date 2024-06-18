@@ -9,6 +9,19 @@ import org.dnine7.idiom.service.IIdiomService;
 import org.dnine7.idiom.service.ITypeService;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @Service
 public class TypeServiceImpl extends ServiceImpl<TypeMapper, Type> implements ITypeService {
+    @Override
+    public Map<Long, String> getTypeMap() {
+        List<Type> list = list();
+        Map<Long, String> typeMap = new HashMap<>();
+        list.forEach(type -> {
+            typeMap.put(type.getId(), type.getName());
+        });
+        return typeMap;
+    }
 }

@@ -23,6 +23,14 @@ public class GroupController {
         return Result.ok(groupService.list());
     }
 
+    @RequestMapping("/getGroupName")
+    public Result<String> getGroupName(@RequestParam long groupId) {
+        Group byId = groupService.getById(groupId);
+        if (byId == null)
+            return Result.error("未找到对应的编组记录");
+        return Result.ok(byId.getName());
+    }
+
     @PostMapping("/add")
     public Result<String> save(@RequestBody Group group) {
         if (!StringUtils.hasText(group.getName())) {

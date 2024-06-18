@@ -2,6 +2,7 @@ package org.dnine7.idiom.controller;
 
 import jakarta.annotation.Resource;
 import org.dnine7.idiom.common.Result;
+import org.dnine7.idiom.dao.Group;
 import org.dnine7.idiom.dao.Type;
 import org.dnine7.idiom.service.ITypeService;
 import org.springframework.util.StringUtils;
@@ -20,6 +21,14 @@ public class TypeController {
     @RequestMapping("/list")
     public Result<List<Type>> list(@RequestBody Type type) {
         return Result.ok(typeService.list());
+    }
+
+    @RequestMapping("/getTypeName")
+    public Result<String> getTypeName(@RequestParam long typeId) {
+        Type byId = typeService.getById(typeId);
+        if (byId == null)
+            return Result.error("未找到对应的分类记录");
+        return Result.ok(byId.getName());
     }
 
     @PostMapping("/add")
