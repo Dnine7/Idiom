@@ -1,6 +1,7 @@
 package org.dnine7.idiom.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import jakarta.annotation.Resource;
 import org.dnine7.idiom.common.Result;
 import org.dnine7.idiom.dao.Group;
@@ -35,6 +36,8 @@ public class IdiomController {
             if (idiom.getTypeId() != null && idiom.getTypeId() != 0) qw.eq("type_id", idiom.getTypeId());
             if (idiom.getGroupId() != null && idiom.getGroupId() != 0) qw.eq("group_id", idiom.getGroupId());
         }
+        Page<Idiom> page = new Page<>();
+        Page<Idiom> idiomPage = idiomService.page(page, qw);
         List<Idiom> list = idiomService.list(qw);
         Map<Long, Type> typeMap = typeService.getTypeMap();
         Map<Long, Group> groupMap = groupService.getGroupMap();
