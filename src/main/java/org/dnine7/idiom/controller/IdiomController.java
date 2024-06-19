@@ -3,7 +3,9 @@ package org.dnine7.idiom.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import jakarta.annotation.Resource;
 import org.dnine7.idiom.common.Result;
+import org.dnine7.idiom.dao.Group;
 import org.dnine7.idiom.dao.Idiom;
+import org.dnine7.idiom.dao.Type;
 import org.dnine7.idiom.service.IGroupService;
 import org.dnine7.idiom.service.IIdiomService;
 import org.dnine7.idiom.service.ITypeService;
@@ -34,14 +36,16 @@ public class IdiomController {
             if (idiom.getGroupId() != null && idiom.getGroupId() != 0) qw.eq("group_id", idiom.getGroupId());
         }
         List<Idiom> list = idiomService.list(qw);
-        Map<Long, String> typeMap = typeService.getTypeMap();
-        Map<Long, String> groupMap = groupService.getGroupMap();
+        Map<Long, Type> typeMap = typeService.getTypeMap();
+        Map<Long, Group> groupMap = groupService.getGroupMap();
         list.forEach(i -> {
             if (i.getTypeId() != null && i.getTypeId() != 0 && typeMap.containsKey(i.getTypeId())) {
-                i.setType(typeMap.get(i.getTypeId()));
+                i.setType(typeMap.get(i.getTypeId()).getName());
+                i.setTypeColor(typeMap.get(i.getTypeId()).getColor());
             }
-            if (i.getGroupId() != null && i.getGroupId() != 0 && typeMap.containsKey(i.getGroupId())) {
-                i.setGroup(groupMap.get(i.getGroupId()));
+            if (i.getGroupId() != null && i.getGroupId() != 0 && groupMap.containsKey(i.getGroupId())) {
+                i.setGroup(groupMap.get(i.getGroupId()).getName());
+                i.setGroupColor(groupMap.get(i.getGroupId()).getColor());
             }
         });
         return Result.ok(list);

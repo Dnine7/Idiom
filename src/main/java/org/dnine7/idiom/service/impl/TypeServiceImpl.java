@@ -16,11 +16,11 @@ import java.util.Map;
 @Service
 public class TypeServiceImpl extends ServiceImpl<TypeMapper, Type> implements ITypeService {
     @Override
-    public Map<Long, String> getTypeMap() {
+    public Map<Long, Type> getTypeMap() {
         List<Type> list = list();
-        Map<Long, String> typeMap = new HashMap<>();
+        Map<Long, Type> typeMap = new HashMap<>();
         list.forEach(type -> {
-            typeMap.put(type.getId(), type.getName());
+            typeMap.put(type.getId(), type);
         });
         return typeMap;
     }

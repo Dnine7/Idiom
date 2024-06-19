@@ -16,11 +16,17 @@ public class Idiom {
     private Long id;
     private String name;
     private String mean;
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long typeId;
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long groupId;
 
     @TableField(exist = false)
     private String group;
     @TableField(exist = false)
     private String type;
+    @TableField(exist = false)
+    private String typeColor;
+    @TableField(exist = false)
+    private String groupColor;
 }

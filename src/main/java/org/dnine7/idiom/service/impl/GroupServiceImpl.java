@@ -16,12 +16,12 @@ import java.util.Map;
 @Service
 public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements IGroupService {
     @Override
-    public Map<Long, String> getGroupMap() {
+    public Map<Long, Group> getGroupMap() {
         List<Group> list = list();
-        Map<Long, String> typeMap = new HashMap<>();
+        Map<Long, Group> groupMap = new HashMap<>();
         list.forEach(type -> {
-            typeMap.put(type.getId(), type.getName());
+            groupMap.put(type.getId(), type);
         });
-        return typeMap;
+        return groupMap;
     }
 }

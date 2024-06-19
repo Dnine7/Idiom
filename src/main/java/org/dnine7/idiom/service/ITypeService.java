@@ -8,5 +8,5 @@ import java.util.Map;
 
 public interface ITypeService extends IService<Type> {
 
-    Map<Long, String> getTypeMap();
+    Map<Long, Type> getTypeMap();
 }

@@ -8,5 +8,5 @@ import java.util.Map;
 
 public interface IGroupService extends IService<Group> {
 
-    Map<Long, String> getGroupMap();
+    Map<Long, Group> getGroupMap();
 }
