@@ -16,6 +16,9 @@ public class Idiom {
     private Long id;
     private String name;
     private String mean;
+    private String sentence;
+    private String sentimentType;
+    private String remark;
     @JsonSerialize(using = ToStringSerializer.class)
     private Long typeId;
     @JsonSerialize(using = ToStringSerializer.class)
