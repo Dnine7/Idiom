@@ -1,9 +1,6 @@
 package org.dnine7.idiom.dao;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
@@ -20,8 +17,10 @@ public class Idiom {
     private String sentimentType;
     private String remark;
     @JsonSerialize(using = ToStringSerializer.class)
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private Long typeId;
     @JsonSerialize(using = ToStringSerializer.class)
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private Long groupId;
 
     @TableField(exist = false)

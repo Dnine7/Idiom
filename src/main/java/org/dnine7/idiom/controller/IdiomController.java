@@ -1,6 +1,8 @@
 package org.dnine7.idiom.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import jakarta.annotation.Resource;
 import org.dnine7.idiom.common.Result;
@@ -36,6 +38,7 @@ public class IdiomController {
             if (idiom.getTypeId() != null && idiom.getTypeId() != 0) qw.eq("type_id", idiom.getTypeId());
             if (idiom.getGroupId() != null && idiom.getGroupId() != 0) qw.eq("group_id", idiom.getGroupId());
         }
+        qw.orderByAsc("type_id");
         Page<Idiom> page = new Page<>();
         Page<Idiom> idiomPage = idiomService.page(page, qw);
         List<Idiom> list = idiomService.list(qw);
