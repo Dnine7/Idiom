@@ -23,12 +23,5 @@ public class Idiom {
     @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private Long groupId;
 
-    @TableField(exist = false)
-    private String group;
-    @TableField(exist = false)
-    private String type;
-    @TableField(exist = false)
-    private String typeColor;
-    @TableField(exist = false)
-    private String groupColor;
+
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.dnine7.idiom.mapper.IdiomMapper">
+
+    <select id="dtoList" resultType="org.dnine7.idiom.dao.vo.IdiomVo" parameterType="org.dnine7.idiom.dao.dto.IdiomDto">
+        select
+        i.id,
+        i.name,
+        i.mean,
+        i.type_id,
+        i.group_id,
+        i.sentiment_type,
+        i.sentence,
+        i.remark,
+        t.name as "type",
+        g.name as "group",
+        t.color as "typeColor",
+        g.color as "groupColor"
+        from Idiom i
+        left join idiom_type t on t.id = i.type_id
+        left join idiom_group g on g.id = i.group_id
+        <where>
+            <if test="typeId != null and typeId != ''">
+                and i.type_id = #{typeId}
+            </if>
+            <if test="groupId != null and groupId != ''">
+                and i.group_id = #{groupId}
+            </if>
+            <if test="name != null and name != ''">
+                and i.name like CONCAT('%', #{name}, '%')
+            </if>
+            <if test="mean != null and mean != ''">
+                and i.mean like CONCAT('%', #{mean}, '%')
+            </if>
+        </where>
+        order by
+        CASE WHEN i.type_id IS NULL THEN 1 ELSE 0 END,
+        CASE WHEN i.group_id IS NULL THEN 1 ELSE 0 END,
+            i.type_id,i.group_id asc
+
+    </select>
+
+</mapper>
