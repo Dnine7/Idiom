@@ -12,11 +12,17 @@ public class Idiom {
     @TableId(type = IdType.ASSIGN_ID)
     private Long id;
     private String name;
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private String mean;
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private String sentence;
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private String sentimentType;
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private String collocation;
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private String fontColor;
+    @TableField(updateStrategy = FieldStrategy.ALWAYS)
     private String remark;
     @JsonSerialize(using = ToStringSerializer.class)
     @TableField(updateStrategy = FieldStrategy.ALWAYS)
