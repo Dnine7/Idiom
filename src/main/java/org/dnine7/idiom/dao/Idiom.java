@@ -15,6 +15,7 @@ public class Idiom {
     private String mean;
     private String sentence;
     private String sentimentType;
+    private String collocation;
     private String remark;
     @JsonSerialize(using = ToStringSerializer.class)
     @TableField(updateStrategy = FieldStrategy.ALWAYS)
